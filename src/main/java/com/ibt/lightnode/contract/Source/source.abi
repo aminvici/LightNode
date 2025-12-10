@@ -1,0 +1,500 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_id",
+				"type": "uint256"
+			},
+			{
+				"name": "_breed",
+				"type": "uint256"
+			},
+			{
+				"name": "_newWeight",
+				"type": "uint256"
+			},
+			{
+				"name": "_newAge",
+				"type": "uint256"
+			},
+			{
+				"name": "_pigFactory",
+				"type": "uint256"
+			},
+			{
+				"name": "_state",
+				"type": "uint256"
+			}
+		],
+		"name": "changePigInfo",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_breed",
+				"type": "uint256"
+			},
+			{
+				"name": "_weight",
+				"type": "uint256"
+			},
+			{
+				"name": "_age",
+				"type": "uint256"
+			},
+			{
+				"name": "_pigFactory",
+				"type": "uint256"
+			},
+			{
+				"name": "_id",
+				"type": "uint256"
+			}
+		],
+		"name": "creatPig",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_id",
+				"type": "uint256"
+			}
+		],
+		"name": "removes",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_transfer",
+				"type": "uint256"
+			},
+			{
+				"name": "_remove",
+				"type": "uint256"
+			}
+		],
+		"name": "setStateValue",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_from",
+				"type": "address"
+			},
+			{
+				"name": "_to",
+				"type": "address"
+			},
+			{
+				"name": "_id",
+				"type": "uint256"
+			},
+			{
+				"name": "_buyRole",
+				"type": "string"
+			},
+			{
+				"name": "_sellRole",
+				"type": "string"
+			},
+			{
+				"name": "_location",
+				"type": "string"
+			},
+			{
+				"name": "_value",
+				"type": "uint256"
+			},
+			{
+				"name": "_state",
+				"type": "uint256"
+			}
+		],
+		"name": "transferPigInfo",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "eventName",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "pigID",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "currentAddress",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "birthTime",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "breed",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "weight",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "age",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "pigfactory",
+				"type": "uint256"
+			}
+		],
+		"name": "newPig",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "eventName",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "pigID",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "currentAddress",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "changeTime",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "breed",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "newWeight",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "newAge",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "pigFactory",
+				"type": "uint256"
+			}
+		],
+		"name": "changePig",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "eventName",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "from",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "to",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "pigID",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "buyRole",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "sellRole",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "location",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "price",
+				"type": "uint256"
+			}
+		],
+		"name": "transferPig",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "transfer",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "remove",
+				"type": "uint256"
+			}
+		],
+		"name": "state",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "eventName",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "state",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "time",
+				"type": "uint256"
+			}
+		],
+		"name": "create",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "eventName",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "state",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "time",
+				"type": "uint256"
+			}
+		],
+		"name": "change",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "eventName",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "state",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "time",
+				"type": "uint256"
+			}
+		],
+		"name": "transfer",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "eventName",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "state",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "time",
+				"type": "uint256"
+			}
+		],
+		"name": "remove",
+		"type": "event"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getCurrentIndex",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getStateValue",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "ownerPigCount",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "pigToOwner",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

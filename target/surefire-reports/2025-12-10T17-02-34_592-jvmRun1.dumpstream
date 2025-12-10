@@ -1,0 +1,39 @@
+# Created at 2025-12-10T17:03:14.226
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: null
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:386)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+
+# Created at 2025-12-10T17:03:14.270
+Unexpected IOException with stream: 2025-12-10 17:03:14.269 ERROR 2123484 --- [   scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.RuntimeException: Corruption: 
+	Descriptor does not contain a meta-nextfile entry
+	Descriptor does not contain a meta-lognumber entry
+	Descriptor does not contain a last-sequence-number entry
+	at org.iq80.leveldb.impl.VersionSet.recover(VersionSet.java:388) ~[leveldb-0.10.jar:0.10]
+	at org.iq80.leveldb.impl.DbImpl.<init>(DbImpl.java:183) ~[leveldb-0.10.jar:0.10]
+	at org.iq80.leveldb.impl.Iq80DBFactory.open(Iq80DBFactory.java:83) ~[leveldb-0.10.jar:0.10]
+	at com.ibt.lightnode.util.LevelDbTemplete.initLevelDB(LevelDbTemplete.java:66) ~[classes/:na]
+	at com.ibt.lightnode.util.LevelDbTemplete.getInstance(LevelDbTemplete.java:50) ~[classes/:na]
+	at com.ibt.lightnode.dao.BlockDao.getBlockHeight(BlockDao.java:31) ~[classes/:na]
+	at com.ibt.lightnode.service.implement.UpdateReceiptServiceImpl.checkBlockHeight(UpdateReceiptServiceImpl.java:51) ~[classes/:na]
+	at com.ibt.lightnode.service.ScheduledTask.updateReceiptTask(ScheduledTask.java:28) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+
+
